@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const covidCase = new Schema({
-    Id: { type: Number, required: true, max: 2000 },
-    RawContent: { type: String, required: true, max : 2000},
-    CaseNumber: { type: Number, required: true, max: 2000 },
-    Age: { type: Number, required: true, max: 2000 },
-    Gender: { type: String, required: true, max: 2000 },
-    District: { type: String, required: true, max: 2000 },
-    DeathCause: { type: String, required: true, max: 2000 },
+    Id: { type: Number },
+    RawContent: { type: String },
+    CaseNumber: { type: Number },
+    Age: { type: Number },
+    Gender: { type: String },
+    District: { type: String },
+    DeathCause: { type: String }
 });
 
 let ShemaCase = mongoose.model('tamilnaduCase', covidCase, 'tamilnaduCase');
